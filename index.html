@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">TODO-LIST</div>
+        <div class="sidebar">
+            <ul>
+                <li>Today</li>
+                <li>All Tasks</li>
+                <li>Important Tasks</li>
+            </ul>
+            <hr>
+            <ul class="projects">
+
+            </ul>
+            <button class="project-btn btn">Add Project</button>
+        </div>
+        <div class="main">
+            <div class="taskList">
+
+            </div>
+            <div id="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="project-close-modal">&times;</span>
+                    <form id="projectModalForm">
+                      <h1>New Project Name</h1>
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" required>
+                      <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+        <!--Task Modal -->
+
+        <div id="task-modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close-modal">&times;</span>
+                <h1>New Task Name</h1>
+                <form id="taskModalForm">
+                  <div class="form-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="task-name" name="name" required>  
+                  </div>
+                  <div class="form-container">
+                    <label for="due-date">Due Date:</label>
+                    <input type="date" id="due-date" name="due-date">  
+                  </div>
+                  <div class="form-container">
+                    <label for="due-time">Due Time:</label>
+                    <input type="time" id="due-time" name="due-time">  
+                  </div>
+                  <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+            <button class="task-btn btn">Add Task</button>       
+        </div>
+    </div>
+<script defer src="main.js"></script></body>
+</html>
